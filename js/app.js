@@ -5,6 +5,7 @@ $(document).ready(function(){
 		$("#text").empty();
 		key = $(this).val().split(" ");
 		$.each(key, function(index, value){
+			aux = "";
 			if(value != "" && value != 32){
 				aux = "&#"+value.toString()+";";
 			}
