@@ -6,7 +6,7 @@ $(document).ready(function(){
 		key = $(this).val().split(" ");
 		$.each(key, function(index, value){
 			aux = "";
-			if(value != "" && value != 32){
+			if(value != "" && value != 32 && $.isNumeric(value)){
 				aux = "&#"+value.toString()+";";
 				$("#text").append(aux);
 			}
@@ -15,6 +15,5 @@ $(document).ready(function(){
 				$("#text").append(aux);
 			}
 		});
-
 	});
 });
