@@ -8,11 +8,12 @@ $(document).ready(function(){
 			aux = "";
 			if(value != "" && value != 32){
 				aux = "&#"+value.toString()+";";
+				$("#text").append(aux);
 			}
 			else if(value == 32){
 				aux = " ";
-			}
 				$("#text").append(aux);
+			}
 		});
 
 	});
